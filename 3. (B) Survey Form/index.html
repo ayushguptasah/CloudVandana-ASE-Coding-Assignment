@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Customer Survey Form</h2> 
+        <form id="surveyForm">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="india">India</option>
+                <option value="germany">Germany</option>
+                <option value="belgium">Belgium</option>
+                <option value="china">China</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="afghanistan">Afghanistan</option>
+                <option value="cuba">Cuba</option>
+                <option value="colombia">Colombia</option>
+                <option value="chile">Chile</option>
+
+            </select>
+
+            <label>Gender</label>
+            <label class="checkbox">
+                <input type="checkbox" name="gender" value="male"> Male
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="gender" value="female"> Female
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="gender" value="other"> Other
+            </label>
+
+            <label for="profession">Profession</label>
+            <input type="text" id="profession" name="profession" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <button type="button" id="submitBtn">Submit</button>
+            <button type="button" id="resetBtn">Reset</button>
+
+        </form>
+    </div>
+
+    <div id="popup">
+        
+        <h2>Survey Submission</h2>
+        <p>First Name: <span id="popupFirstName"></span></p>
+        <p>Last Name: <span id="popupLastName"></span></p>
+        <p>Date of Birth: <span id="popupDOB"></span></p>
+        <p>Country: <span id="popupCountry"></span></p>
+        <p>Gender: <span id="popupGender"></span></p>
+        <p>Profession: <span id="popupProfession"></span></p>
+        <p>Email: <span id="popupEmail"></span></p>
+        <p>Mobile Number: <span id="popupMobile"></span></p>
+        <button id="closePopupBtn">Close</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
